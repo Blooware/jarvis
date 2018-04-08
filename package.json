@@ -1,0 +1,19 @@
+{
+    "name": "Jarvis",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "ejs": "*",
+        "body-parser": "*",
+        "socket.io": "2.0.4",
+        "apiai": "*",
+        "http-auth": "*",
+        "express": "3.5.1",
+        "node-schedule": "*",
+        "randomstring": "*",
+        "jade": "*",
+    }
+}

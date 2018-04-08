@@ -1,0 +1,37 @@
+
+*{
+    outline: none;
+}
+body{
+    background:#2C3E50;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+}
+
+.title{
+    padding-top: 100px;
+    display: block;
+    color: #fff;
+    margin: auto;
+    font-size: 40px;
+    text-align: center;
+}
+
+.test{
+    display: block;
+    color: #fff;
+    background: none;
+    font-size: 40px;
+    margin: auto;
+    border:2px solid  #0078db;
+    padding: 20px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.chat{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 300px;
+}
