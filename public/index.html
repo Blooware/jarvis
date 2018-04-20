@@ -22,13 +22,13 @@
 
         <meta name="keywords" content="" />
 
+        <!-- Allow 'Jarvis' Recognition -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+
         <!-- VOICE API -->
         <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
 
 
-        <!--arc reactor -->
-        <!-- CREDIT: https://codepen.io/supersarkar/pen/GxKZee -->
-        <link href="css/arc.css" rel="stylesheet">
 
         <!-- no cache -->
         <meta charset="UTF-8">
@@ -44,40 +44,35 @@
 
     </head>
     <body>
-        <!-- navigation bar -->
 
-        <div class="main-page">
-            <p class="title">J A R V I S</p>
-            <div class="reactor-container">
-                <div class="tunnel circle abs-center"></div>
-                <div class="core-wrapper circle abs-center"></div>
-                <div class="core-outer circle abs-center"></div>
-                <div class="core-inner circle abs-center"></div>
-                <div class="coil-container">
-                    <div class="coil coil-1"></div>
-                    <div class="coil coil-2"></div>
-                    <div class="coil coil-3"></div>
-                    <div class="coil coil-4"></div>
-                    <div class="coil coil-5"></div>
-                    <div class="coil coil-6"></div>
-                    <div class="coil coil-7"></div>
-                    <div class="coil coil-8"></div>
-                </div>
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
             </div>
+        </div>
 
+        <div id="vidtop-content">
+
+            <div class="main-page">
+                <p class="title">J A R V I S</p>
+               
+
+            </div>
+            <link rel="stylesheet" href="./botui-master/build/botui.min.css" />
+            <link rel="stylesheet" href="./botui-master/build/botui-theme-default.css" />
+            <div class="chat">
+                <div id="botui-app">
+                    <bot-ui></botui>
+                </div>           
+            </div>
         </div>
-        <link rel="stylesheet" href="./botui-master/build/botui.min.css" />
-        <link rel="stylesheet" href="./botui-master/build/botui-theme-default.css" />
-        <div class="chat">
-            <div id="botui-app">
-                <bot-ui></botui>
-            </div>           
-        </div>
+
+
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
-
         <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
         <script src="./botui-master/build/botui.min.js"></script>
-      
+
     </body>
     <script>
         responsiveVoice.setDefaultVoice("UK English Male");
