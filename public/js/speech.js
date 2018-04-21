@@ -29,7 +29,9 @@ window.onload = function() {
     var recognition = new SpeechRecognition();
     var speechRecognitionList = new SpeechGrammarList();
 
-
+    botui.message.add({
+        content: 'Say my name to begin...'
+    }); //add to conversation UI
 
     // Start listening, don't restart automatically
     if (annyang) {
@@ -136,6 +138,7 @@ window.onload = function() {
     function startListening(){
         $('.title').text("LISTENING");
         recognition.start();
+      
     } //start listening
 
 }
@@ -146,4 +149,8 @@ function ask(x){
     });
 
     socket.emit('message', {data: x});
+      scrollToBottom();
+}
+function scrollToBottom(){
+    $(".chat").animate({ scrollTop: $(document).height() }, 1000); 
 }
