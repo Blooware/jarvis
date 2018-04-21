@@ -29,7 +29,7 @@ io.on('connection', function(socket){
 function ask(socket, input){
     'use strict';
     var apiai = require("apiai");
-    var app = apiai("b334d02257c047228a4bff93d6a7603f");
+    var app = apiai("<api goes here>");
     var options = {
         sessionId: '<UNIQE SESSION ID>'
     };
