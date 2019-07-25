@@ -14,6 +14,6 @@
         "express": "3.5.1",
         "node-schedule": "*",
         "randomstring": "*",
-        "jade": "*",
+        "jade": "*"
     }
 }
